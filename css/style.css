@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+input {
+  border: 2px solid #632aff;
+  width: 277px;
+  height: 59px;
+  font-size: 20px;
+  padding: 15px;
+  margin-top: 6px;
+}
+
+.error{
+  box-shadow: 0 0 15px red;
+  border-color: red;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+}
+
+.cont_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 100;
+}
+
+h1{
+  font-size: 46px;
+}
+
+.cont_text{
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 44px;
+}
+
+label{
+  display: flex;
+  flex-direction: column;
+}
+
+.input_box{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 75vh;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+main .container form .input_box p{
+  font-size: 11px;
+}
+
+#fill {
+  border-color: blueviolet;
+}
+
+button{
+  width: 277px;
+  height: 59px;
+  background-color: #4200FF;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #632aff;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form *{
+  outline: none;
+}
+
+input:focus{
+  box-shadow: 0 0 15px #4200FF;
+  transition: 0.5s ease;
+}
+
+p{
+  margin-top: 6px;
+}
