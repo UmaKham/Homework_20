@@ -15,73 +15,100 @@
       <div class="cont_box">
         <h1>Example form</h1>
         <div class="cont_text">
-          <p>All: 15</p>
-          <p>Need: 12</p>
-          <p>Success: 8/12</p>
-          <p>Error: 4/12</p>
+          <span>All: </span><p class="allInp">15</p>
+          <span>Need: </span><p class="needFill">0</p>
+          <span>Success: </span><div class="result"><p class="succescol">0</p><span>/12</span></div>
+          <span>Error: </span><div class="result"><p class="errorcol">0</p><span>/12</span></div>
         </div>
         
       </div>
         
         <form action="" name="example">
+
           <div class="input_box">
-            <label for="name">
-              Name:
-              <input type="name" name="name" class="fill" placeholder="Tom">
-              <p>Need to fill</p>
-            </label>
-            <label for="surname">
-              surname:
-              <input class="name" type="text" name="surname" id="" placeholder="Reinert">
-            </label>
-            <label for="Email">
-              Email address:
-              <input type="email" name="email" class="fill">
-              <p>Need to fill</p>
-            </label>
-            <label for="number">
-              Phone number:
-              <input type="number" name="phone" id="">
-            </label>
-            <label for="mom_name">
-              Your mom's name:
-              <input type="text" name="mom_name" id="">
-            </label>
-            <label for="pop_name">
-              Your pop's name:
-              <input type="text" name="pop_name" id="">
-            </label>
-  
-            <label for="age">
-              Age:
-              <input type="number" name="age" class="fill">
-              <p>Need to fill</p>
-            </label>
-            <label for="about">
-              About you:
-              <input type="text" name="about" class="fill">
-              <p>Need to fill</p>
-            </label>
-            <label for="js">
-              What is JavaScript?:
-              <input type="text" name="js" class="fill">
-              <p>Need to fill</p>
-            </label>
-            <label for="html">
-              What is HTML?:
-              <input type="text" name="html" class="fill">
-              <p>Need to fill</p>
-            </label>
-            <label for="css">
-              What is CSS?:
-              <input type="text" name="css" class="fill">
-              <p>Need to fill</p>
-            </label>
-            <label for="car">
-              Your favourit car?:
-              <input type="text" name="car" id="">
-            </label>
+
+            <div class="item_box">
+
+              <div class="fill">
+                <label for="name">Name:</label>
+                <input type="text" class="fill" id="name" name="name">
+                <p>Need to fill</p>
+            </div>
+
+            <div class="notFill">
+                <label for="surname">Surname:</label>
+                <input type="text" class="surname" placeholder="Reinert" id="surname">
+                <p></p>
+              </div>
+
+              <div class="fill">
+                <label for="email">Email address:</label>
+                <input type="email" class="fill" id="email" name="email">
+                <p>Need to fill</p>
+              </div>
+
+              <div class="notFill">
+                <label for="number">Phone number:</label>
+                <input type="number" id="number" name="name">
+                <p></p>
+              </div>
+
+              <div class="notFill">
+                <label for="mom_name">Your mom's name:</label>
+                <input type="text" id="mom_name" name="name">
+                <p></p>
+              </div>
+
+              <div class="notFill">
+                <label for="pop_name">Your pop's name:</label>
+                <input type="text" id="pop_name" name="name">
+                <p></p>
+              </div>
+
+            </div>
+
+            <div class="item_box">
+
+              <div class="fill">
+                <label for="age">Age:</label>
+                <input type="number" class="fill" id="age" name="age">
+                <p>Need to fill</p>
+              </div>
+
+              <div class="fill">
+                <label for="about">About you:</label>
+                <input type="text" class="fill" id="about" name="name">
+                <p>Need to fill</p>
+              </div>
+
+              <div class="fill">
+                <label for="js">What is JavaScript?:</label>
+                <input type="text" class="fill" id="js" name="name">
+                <p>Need to fill</p>
+              </div>
+
+              <div class="fill">
+                <label for="html">What is HTML?:</label>
+                <input type="text" class="fill" id="html" name="name">
+                <p>Need to fill</p>
+              </div>
+
+              <div class="fill">
+                <label for="css">What is CSS?:</label>
+                <input type="text" class="fill" id="css" name="name">
+                <p>Need to fill</p>
+              </div>
+
+              <div class="notFill">
+                <label for="car">Your favourit car?:</label>
+                <input type="text" id="car" name="name">
+                <p></p>
+              </div>
+
+            </div>
+
           </div>
+
           <button class="btn" type="submit" >Save changes</button>
           
         </form>

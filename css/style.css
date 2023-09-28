@@ -14,10 +14,7 @@ input {
   margin-top: 6px;
 }
 
-.error{
-  box-shadow: 0 0 15px red;
-  border-color: red;
-}
+
 
 .container{
   width: 100%;
@@ -35,11 +32,26 @@ input {
 h1{
   font-size: 46px;
 }
+.result{
+  display: flex;
+}
 
 .cont_text{
   display: flex;
+  align-items: center;
   gap: 20px;
   font-size: 14px;
+}
+
+.cont_text p{
+  font-size: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+span{
+  font-size: 20px;
+  height: 20px;
 }
 
 .box{
@@ -56,15 +68,19 @@ label{
 
 .input_box{
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 75vh;
-  gap: 20px;
+  gap: 80px;
   margin-top: 40px;
 }
 
+.fill{
+  position: relative;
+}
+
+
+
 main .container form .input_box p{
   font-size: 11px;
+  height: 20px;
 }
 
 #fill {
@@ -102,4 +118,30 @@ input:focus{
 
 p{
   margin-top: 6px;
+}
+
+.fill::after{
+  content: "";
+  display: block;
+  background-image: url('../img/error\ warning.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 45px;
+  right: -35px;
+  opacity: 0;
+}
+
+.error input{
+  box-shadow: 0 0 15px red;
+  color: red;
+  border-color: red;
+}
+
+.error::after{
+  opacity: 1;;
+  transform: .5s ease
 }
